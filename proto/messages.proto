@@ -1,7 +1,9 @@
-syntax = "proto3"
+// protoc --go_out=. --go-grpc_out=. ./messages.proto
+
+syntax = "proto3";
 
 package proto;
-option go_package = "./";
+option go_package = "../proto";
 
 message UserRequest {
     string id = 1;
